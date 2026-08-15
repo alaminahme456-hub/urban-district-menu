@@ -47,8 +47,8 @@ function MenuContent() {
   const menuPages: MenuCategory[][] = [];
   if (mainMeals) {
     const items = mainMeals.items;
-    for (let i = 0; i < items.length; i += 3) {
-      menuPages.push([{ ...mainMeals, items: items.slice(i, i + 3) }]);
+    for (let i = 0; i < items.length; i += 4) {
+      menuPages.push([{ ...mainMeals, items: items.slice(i, i + 4) }]);
     }
   }
   if (drinks) {
@@ -80,20 +80,12 @@ function MenuContent() {
 
       {/* Main content */}
       <div
-        className="min-h-screen flex flex-col items-center justify-center relative overflow-hidden"
+        className="fixed inset-0 overflow-hidden"
         style={{
-          background: 'linear-gradient(135deg, #000000 0%, #0a0a0a 50%, #111111 100%)',
+          background: '#000000',
           fontFamily: 'Georgia, "Times New Roman", serif',
         }}
       >
-        {/* Subtle ambient light effect */}
-        <div
-          className="fixed inset-0 pointer-events-none"
-          style={{
-            background: 'radial-gradient(ellipse at 50% 30%, rgba(212, 175, 55, 0.03) 0%, transparent 70%)',
-          }}
-        />
-
         {/* Table indicator */}
         {tableNumber && (
           <div
@@ -109,8 +101,8 @@ function MenuContent() {
           </div>
         )}
 
-        {/* Book container */}
-        <div className="flex-1 w-full flex items-center justify-center px-2 py-2 sm:px-4 sm:py-4">
+        {/* Book container - full screen */}
+        <div className="w-full h-full relative">
           <Suspense
             fallback={
               <div className="w-[300px] h-[400px] flex items-center justify-center">

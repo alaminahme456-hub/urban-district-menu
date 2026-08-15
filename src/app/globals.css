@@ -92,7 +92,8 @@
 
 /* Page Flip Library overrides - must be global */
 .stf__parent {
-  margin: 0 auto !important;
+  width: 100% !important;
+  height: 100% !important;
 }
 
 .stf__wrapper {
