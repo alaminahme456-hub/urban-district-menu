@@ -46,7 +46,14 @@ export default function BackCoverPage() {
         </p>
 
         <div className="flex flex-col items-center gap-1.5 mt-4">
-          <p className="text-[10px] text-white/20">Follow us</p>
+          <p className="text-[10px] text-white/20">Contact us</p>
+          <a
+            href={`tel:${restaurantConfig.phone}`}
+            className="text-xs text-[#d4af37]/50 font-semibold hover:text-[#d4af37] transition-colors"
+          >
+            {restaurantConfig.phone}
+          </a>
+          <p className="text-[10px] text-white/20 mt-2">Follow us</p>
           <a
             href={restaurantConfig.instagramUrl}
             target="_blank"

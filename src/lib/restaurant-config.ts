@@ -8,6 +8,7 @@ export const restaurantConfig: RestaurantConfig = {
   email: 'Urbandistrictng@gmail.com',
   social: '@Urbandistrictng',
   instagramUrl: 'https://www.instagram.com/urbandistrictng/',
+  phone: '07068215500',
   currency: '₦',
   coverTitle: 'URBAN DISTRICT',
   coverSubtitle: 'GRILL AND DRINKS',

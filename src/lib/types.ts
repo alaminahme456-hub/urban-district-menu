@@ -33,6 +33,7 @@ export interface RestaurantConfig {
   email: string;
   social: string;
   instagramUrl?: string;
+  phone?: string;
   currency: string;
   coverTitle: string;
   coverSubtitle: string;
