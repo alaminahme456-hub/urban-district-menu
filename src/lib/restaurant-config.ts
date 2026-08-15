@@ -5,8 +5,9 @@ export const restaurantConfig: RestaurantConfig = {
   tagline: 'GRILL AND DRINKS',
   subtitle: 'Satisfy your cravings, urban district style',
   whatsappNumber: '2347068215500', // International format: 234 + 07068215500
-  email: 'Urban district@gmail.com',
+  email: 'Urbandistrictng@gmail.com',
   social: '@Urbandistrictng',
+  instagramUrl: 'https://www.instagram.com/urbandistrictng/',
   currency: '₦',
   coverTitle: 'URBAN DISTRICT',
   coverSubtitle: 'GRILL AND DRINKS',

@@ -39,21 +39,8 @@ function MenuContent() {
     }, 200);
   }, []);
 
-  // Split menu items into pages (max 3 items per page for good readability)
-  const mainMeals = menuConfig.categories.find(c => c.id === 'main-meals');
-  const drinks = menuConfig.categories.find(c => c.id === 'drinks');
-
-  // Build a list of category arrays, one per page
-  const menuPages: MenuCategory[][] = [];
-  if (mainMeals) {
-    const items = mainMeals.items;
-    for (let i = 0; i < items.length; i += 4) {
-      menuPages.push([{ ...mainMeals, items: items.slice(i, i + 4) }]);
-    }
-  }
-  if (drinks) {
-    menuPages.push([drinks]);
-  }
+  // All menu items on a single page
+  const menuPages: MenuCategory[][] = [menuConfig.categories];
 
   // Build pages
   const pages: React.ReactNode[] = [

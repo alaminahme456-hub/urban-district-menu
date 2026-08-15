@@ -123,9 +123,14 @@ export default function CoverPage({ onOpenMenu }: CoverPageProps) {
           transition={{ duration: 1, delay: 1.5 }}
           className="flex flex-col items-center gap-1 mt-4 sm:mt-6"
         >
-          <p className="text-[10px] sm:text-xs text-white/25 tracking-wider">
-            {restaurantConfig.social}
-          </p>
+          <a
+            href={restaurantConfig.instagramUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-[10px] sm:text-xs text-white/25 tracking-wider hover:text-[#d4af37]/50 transition-colors"
+          >
+            {restaurantConfig.instagramUrl}
+          </a>
           <p className="text-[10px] sm:text-xs text-white/25 tracking-wider">
             {restaurantConfig.email}
           </p>

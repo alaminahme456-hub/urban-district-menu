@@ -32,6 +32,7 @@ export interface RestaurantConfig {
   whatsappNumber: string;
   email: string;
   social: string;
+  instagramUrl?: string;
   currency: string;
   coverTitle: string;
   coverSubtitle: string;
