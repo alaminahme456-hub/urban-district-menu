@@ -53,7 +53,7 @@ export default function BackCoverPage() {
             rel="noopener noreferrer"
             className="text-xs text-[#d4af37]/50 font-semibold hover:text-[#d4af37] transition-colors"
           >
-            {restaurantConfig.instagramUrl}
+            @{restaurantConfig.social.replace('@', '')}
           </a>
           <p className="text-[10px] text-white/20 mt-1">{restaurantConfig.email}</p>
         </div>

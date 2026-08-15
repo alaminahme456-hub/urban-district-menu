@@ -129,7 +129,7 @@ export default function CoverPage({ onOpenMenu }: CoverPageProps) {
             rel="noopener noreferrer"
             className="text-[10px] sm:text-xs text-white/25 tracking-wider hover:text-[#d4af37]/50 transition-colors"
           >
-            {restaurantConfig.instagramUrl}
+            @{restaurantConfig.social.replace('@', '')}
           </a>
           <p className="text-[10px] sm:text-xs text-white/25 tracking-wider">
             {restaurantConfig.email}
