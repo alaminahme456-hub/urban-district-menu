@@ -41,7 +41,7 @@ export default function LoadingScreen({ onComplete }: LoadingScreenProps) {
       {!fadeOut && (
         <motion.div
           className="fixed inset-0 z-[9999] flex flex-col items-center justify-center"
-          style={{ background: '#0a1628' }}
+          style={{ background: '#000000' }}
           exit={{ opacity: 0 }}
           transition={{ duration: 0.8, ease: 'easeInOut' }}
         >

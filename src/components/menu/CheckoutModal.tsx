@@ -84,7 +84,7 @@ export default function CheckoutModal({ tableNumber }: CheckoutModalProps) {
             transition={{ type: 'spring', damping: 25, stiffness: 300 }}
             className="fixed inset-x-4 top-1/2 -translate-y-1/2 z-[90] sm:inset-auto sm:left-1/2 sm:top-1/2 sm:-translate-x-1/2 sm:-translate-y-1/2 sm:w-full sm:max-w-md rounded-2xl overflow-hidden shadow-2xl"
             style={{
-              background: '#0a1628',
+              background: '#000000',
               border: '1px solid rgba(212, 175, 55, 0.2)',
             }}
           >

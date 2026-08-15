@@ -12,7 +12,7 @@ export default function MenuPage({ categories }: MenuPageProps) {
     <div
       className="w-full h-full overflow-y-auto"
       style={{
-        background: 'linear-gradient(180deg, #f8f5ef 0%, #f0ece3 100%)',
+        background: 'linear-gradient(180deg, #0a0a0a 0%, #111111 100%)',
       }}
     >
       {/* Header */}
@@ -23,7 +23,7 @@ export default function MenuPage({ categories }: MenuPageProps) {
           <div className="w-8 h-[1px] bg-[#d4af37]/60" />
         </div>
         <h2
-          className="text-sm sm:text-base tracking-[0.15em] uppercase text-[#0a1628]"
+          className="text-sm sm:text-base tracking-[0.15em] uppercase text-[#d4af37]"
           style={{ fontFamily: 'Georgia, serif', fontWeight: 700 }}
         >
           Our Menu

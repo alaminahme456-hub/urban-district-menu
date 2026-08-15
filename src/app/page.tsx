@@ -82,7 +82,7 @@ function MenuContent() {
       <div
         className="min-h-screen flex flex-col items-center justify-center relative overflow-hidden"
         style={{
-          background: 'linear-gradient(135deg, #070d1a 0%, #0a1628 50%, #0d1a30 100%)',
+          background: 'linear-gradient(135deg, #000000 0%, #0a0a0a 50%, #111111 100%)',
           fontFamily: 'Georgia, "Times New Roman", serif',
         }}
       >
@@ -139,7 +139,7 @@ export default function Home() {
     <Suspense fallback={
       <div
         className="min-h-screen flex items-center justify-center"
-        style={{ background: '#070d1a' }}
+        style={{ background: '#000000' }}
       >
         <div className="w-8 h-8 border-2 border-[#d4af37]/30 border-t-[#d4af37] rounded-full animate-spin" />
       </div>

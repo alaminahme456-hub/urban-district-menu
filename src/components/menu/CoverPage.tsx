@@ -11,7 +11,7 @@ export default function CoverPage({ onOpenMenu }: CoverPageProps) {
   return (
     <div
       className="relative w-full h-full flex flex-col items-center justify-center overflow-hidden"
-      style={{ background: '#0a1628' }}
+      style={{ background: '#000000' }}
     >
       {/* Background image overlay */}
       <div
@@ -110,7 +110,7 @@ export default function CoverPage({ onOpenMenu }: CoverPageProps) {
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
           onClick={onOpenMenu}
-          className="mt-6 sm:mt-8 px-8 sm:px-12 py-3 sm:py-4 bg-[#d4af37] text-[#0a1628] font-bold text-xs sm:text-sm tracking-[0.2em] uppercase rounded-sm hover:bg-[#e8c94a] transition-colors duration-300 shadow-lg shadow-[#d4af37]/20"
+          className="mt-6 sm:mt-8 px-8 sm:px-12 py-3 sm:py-4 bg-[#d4af37] text-[#000000] font-bold text-xs sm:text-sm tracking-[0.2em] uppercase rounded-sm hover:bg-[#e8c94a] transition-colors duration-300 shadow-lg shadow-[#d4af37]/20"
           style={{ fontFamily: 'Georgia, "Times New Roman", serif' }}
         >
           OPEN MENU

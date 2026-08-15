@@ -39,7 +39,7 @@ export default function OrderBasket() {
             }}
             aria-label="View order basket"
           >
-            <ShoppingCart size={22} className="text-[#0a1628]" />
+            <ShoppingCart size={22} className="text-[#000000]" />
             {/* Badge */}
             <motion.span
               key={count}
@@ -70,7 +70,7 @@ export default function OrderBasket() {
             <div
               className="px-4 py-3 rounded-xl flex items-center justify-between backdrop-blur-md shadow-lg"
               style={{
-                background: 'rgba(10, 22, 40, 0.9)',
+                background: 'rgba(0, 0, 0, 0.92)',
                 border: '1px solid rgba(212, 175, 55, 0.2)',
               }}
             >
@@ -107,7 +107,7 @@ export default function OrderBasket() {
               transition={{ type: 'spring', damping: 30, stiffness: 300 }}
               className="fixed bottom-0 left-0 right-0 z-[70] rounded-t-2xl overflow-hidden"
               style={{
-                background: '#0a1628',
+                background: '#000000',
                 maxHeight: '85vh',
               }}
             >

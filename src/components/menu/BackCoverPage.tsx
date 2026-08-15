@@ -6,7 +6,7 @@ export default function BackCoverPage() {
   return (
     <div
       className="w-full h-full flex flex-col items-center justify-center overflow-hidden relative"
-      style={{ background: '#0a1628' }}
+      style={{ background: '#000000' }}
     >
       {/* Subtle pattern */}
       <div
