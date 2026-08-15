@@ -39,8 +39,17 @@ function MenuContent() {
     }, 200);
   }, []);
 
-  // All menu items on a single page
-  const menuPages: MenuCategory[][] = [menuConfig.categories];
+  // Split menu items into 2 pages
+  const mainMeals = menuConfig.categories.find(c => c.id === 'main-meals');
+  const drinks = menuConfig.categories.find(c => c.id === 'drinks');
+
+  const menuPages: MenuCategory[][] = [];
+  if (mainMeals) {
+    const items = mainMeals.items;
+    const half = Math.ceil(items.length / 2);
+    menuPages.push([{ ...mainMeals, items: items.slice(0, half) }]);
+    menuPages.push([{ ...mainMeals, items: items.slice(half) }, ...(drinks ? [drinks] : [])]);
+  }
 
   // Build pages
   const pages: React.ReactNode[] = [
