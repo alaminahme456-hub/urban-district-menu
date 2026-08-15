@@ -9,6 +9,7 @@ export const restaurantConfig: RestaurantConfig = {
   social: '@Urbandistrictng',
   instagramUrl: 'https://www.instagram.com/urbandistrictng/',
   phone: '07068215500',
+  address: '33a Moore Road, Off University Rd, Yaba, Lagos 100001, Lagos',
   currency: '₦',
   coverTitle: 'URBAN DISTRICT',
   coverSubtitle: 'GRILL AND DRINKS',

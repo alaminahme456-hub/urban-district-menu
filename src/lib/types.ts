@@ -34,6 +34,7 @@ export interface RestaurantConfig {
   social: string;
   instagramUrl?: string;
   phone?: string;
+  address?: string;
   currency: string;
   coverTitle: string;
   coverSubtitle: string;
