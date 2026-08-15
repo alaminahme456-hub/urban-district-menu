@@ -106,7 +106,7 @@ const PageFlipBook = forwardRef<PageFlipBookRef, PageFlipBookProps>(
             <div
               key={index}
               className="flip-page"
-              data-density={index === 0 || index === children.length - 1 ? 'hard' : 'soft'}
+              data-density="hard"
               style={{
                 backgroundColor: '#111111',
                 overflow: 'hidden',
