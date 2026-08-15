@@ -76,18 +76,7 @@ export default function FoodCard({ item }: FoodCardProps) {
           </div>
         )}
 
-        {/* Price badge */}
-        <div
-          className="absolute top-2 right-2 px-2.5 py-1 rounded-sm text-xs font-bold"
-          style={{
-            background: 'rgba(0, 0, 0, 0.85)',
-            color: '#d4af37',
-            fontFamily: 'Georgia, serif',
-            backdropFilter: 'blur(4px)',
-          }}
-        >
-          {formatPrice(item.price)}
-        </div>
+
       </div>
 
       {/* Content */}
@@ -100,6 +89,12 @@ export default function FoodCard({ item }: FoodCardProps) {
         </h3>
         <p className="text-[10px] sm:text-xs text-gray-400 leading-relaxed line-clamp-2">
           {item.description}
+        </p>
+        <p
+          className="text-xs sm:text-sm font-bold text-[#d4af37]"
+          style={{ fontFamily: 'Georgia, serif' }}
+        >
+          {formatPrice(item.price)}
         </p>
       </div>
 
