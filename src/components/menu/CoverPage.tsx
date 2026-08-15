@@ -13,20 +13,6 @@ export default function CoverPage({ onOpenMenu }: CoverPageProps) {
       className="relative w-full h-full flex flex-col items-center justify-center overflow-hidden"
       style={{ background: '#000000' }}
     >
-      {/* Background image overlay */}
-      <div
-        className="absolute inset-0 bg-cover bg-center opacity-20"
-        style={{ backgroundImage: 'url(/menu-images/cover-bg.png)' }}
-      />
-
-      {/* Radial gold glow */}
-      <div
-        className="absolute inset-0"
-        style={{
-          background: 'radial-gradient(ellipse at center, rgba(212, 175, 55, 0.08) 0%, transparent 70%)',
-        }}
-      />
-
       {/* Border frame */}
       <div className="absolute inset-3 sm:inset-4 border border-[#d4af37]/30 rounded-sm">
         <div className="absolute inset-1 border border-[#d4af37]/15 rounded-sm" />
