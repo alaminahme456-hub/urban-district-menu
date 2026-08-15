@@ -14,6 +14,31 @@ export const restaurantConfig: RestaurantConfig = {
   coverTitle: 'URBAN DISTRICT',
   coverSubtitle: 'GRILL AND DRINKS',
   coverTagline: 'Satisfy your cravings, urban district style',
+  paymentConfig: {
+    bankAccounts: [
+      {
+        id: 'wema-1',
+        bankName: 'Wema Bank',
+        accountNumber: '9379001716',
+        accountName: 'ONYEKA OKANI',
+      },
+      {
+        id: 'wema-2',
+        bankName: 'Wema Bank',
+        accountNumber: '9379955790',
+        accountName: 'ONYEKA OKANI',
+      },
+      {
+        id: 'gtb-1',
+        bankName: 'GTB Bank',
+        accountNumber: '9007574933',
+        accountName: 'URBAN DISTRICT',
+      },
+    ],
+    warningMessage: 'Please transfer only to the official accounts displayed on this page. Do not transfer to any personal account provided by staff.',
+    secondaryWarning: 'If a staff member gives you a different account number, please raise an alarm with Urban District management.',
+    paymentProofMessage: 'Hello Urban District, I have made payment for my order. I would like to send my payment proof.',
+  },
 };
 
 export const menuConfig: MenuConfig = {

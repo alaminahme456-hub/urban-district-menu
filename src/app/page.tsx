@@ -9,6 +9,7 @@ import BackCoverPage from '@/components/menu/BackCoverPage';
 import MenuPage from '@/components/menu/MenuPage';
 import OrderBasket from '@/components/menu/OrderBasket';
 import CheckoutModal from '@/components/menu/CheckoutModal';
+import PaymentPage from '@/components/menu/PaymentPage';
 import { menuConfig } from '@/lib/restaurant-config';
 import { MenuCategory } from '@/lib/types';
 import { PageFlipBookRef } from '@/components/menu/PageFlipBook';
@@ -61,6 +62,9 @@ function MenuContent() {
   menuPages.forEach((pageCategories, i) => {
     pages.push(<MenuPage key={`menu-${i}`} categories={pageCategories} />);
   });
+
+  // Payment page
+  pages.push(<PaymentPage key="payment" tableNumber={tableNumber} />);
 
   // Back cover
   pages.push(<BackCoverPage key="back" />);

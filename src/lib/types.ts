@@ -39,6 +39,21 @@ export interface RestaurantConfig {
   coverTitle: string;
   coverSubtitle: string;
   coverTagline: string;
+  paymentConfig?: PaymentConfig;
+}
+
+export interface BankAccount {
+  id: string;
+  bankName: string;
+  accountNumber: string;
+  accountName: string;
+}
+
+export interface PaymentConfig {
+  bankAccounts: BankAccount[];
+  warningMessage: string;
+  secondaryWarning: string;
+  paymentProofMessage: string;
 }
 
 export interface MenuConfig {
